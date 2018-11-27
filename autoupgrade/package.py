@@ -4,7 +4,7 @@ import os
 import re
 import sys
 
-import pip
+from pip import _internal as pip
 import pkg_resources
 
 from .exceptions import NoVersionsError, PIPError, PkgNotFoundError
