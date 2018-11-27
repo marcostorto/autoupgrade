@@ -29,4 +29,4 @@ def ver_to_tuple(value):
     """
     Convert version like string to a tuple of integers.
     """
-    return tuple(int(_f) for _f in re.split(r'\D+', value) if _f)
+    return tuple(int(_f) for _f in re.split(r'py2|py3|\D', value) if _f)
